@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness | FitFlex Wellness</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .exercise-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .exercise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-8" src="https://th.bing.com/th/id/OIP.KXliBHCnIwxMvPmeEmbUOAHaHa?w=169&h=180&c=7&r=0&o=5&pid=1.7" alt="FitFlex Wellness Logo">
+                        <span class="text-xl font-bold ml-2">FitFlex Wellness</span>
+                    </div>
+                    <div class="hidden md:flex md:ml-10">
+                        <a href="index.html" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="fitness.html" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Fitness</a>
+                        <a href="nutrition.html" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Nutrition</a>
+                        <a href="mental.html" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Mental Well-being</a>
+                        <a href="#meditation" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Meditation</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-800 hover:text-green-500">Login</a>
+                    <a href="#" class="bg-green-500 text-white px-3 py-2 rounded-md text-sm font-medium">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fitness Content -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Top 10 Exercises for Your Fitness</h2>
+                <p class="mt-4 text-lg text-gray-600">Get fit with our top exercises that suit all levels.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://plus.unsplash.com/premium_photo-1673458333819-f96052f30d99?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UHVzaCUyMFVwc3xlbnwwfHwwfHx8MA%3D%3D" alt="Exercise 1" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Push-Ups</h3>
+                    <p class="mt-2 text-gray-600">Strengthen your chest, shoulders, and triceps with this classic exercise.</p>
+                </div>
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://plus.unsplash.com/premium_photo-1675364965052-fdb98d1ddd67?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3F1YXRzfGVufDB8fDB8fHww" alt="Exercise 2" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Squats</h3>
+                    <p class="mt-2 text-gray-600">Build your legs and glutes with this essential lower body move.</p>
+                </div>
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://plus.unsplash.com/premium_photo-1675364965021-fab01b044344?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8QnVycGVlcyUyMGV4ZXJjaXNlfGVufDB8fDB8fHww" alt="Exercise 3" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Burpees</h3>
+                    <p class="mt-2 text-gray-600">Boost your cardiovascular fitness with this full-body exercise.</p>
+                </div>
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://images.unsplash.com/photo-1600881333343-8b8ae0f1da56?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFBsYW5rfGVufDB8fDB8fHww" alt="Exercise 4" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Plank</h3>
+                    <p class="mt-2 text-gray-600">Enhance your core strength and stability with the plank.</p>
+                </div>
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://images.unsplash.com/photo-1626440861714-c4c8043e60f7?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8THVuZ2VzfGVufDB8fDB8fHww" alt="Exercise 5" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Lunges</h3>
+                    <p class="mt-2 text-gray-600">Improve your balance and leg strength with lunges.</p>
+                </div>
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://plus.unsplash.com/premium_photo-1664368832389-37d40e819a2a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8SnVtcGluZyUyMEphY2tzfGVufDB8fDB8fHww" alt="Exercise 7" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Jumping Jacks</h3>
+                    <p class="mt-2 text-gray-600">Get your heart pumping and improve coordination with jumping jacks.</p>
+                </div>
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://images.unsplash.com/photo-1516481265257-97e5f4bc50d5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fER1bWJiZWxsJTIwUm93c3xlbnwwfHwwfHx8MA%3D%3D" alt="Exercise 8" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Dumbbell Rows</h3>
+                    <p class="mt-2 text-gray-600">Strengthen your back and arms with dumbbell rows.</p>
+                </div>
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://images.unsplash.com/photo-1508215885820-4585e56135c8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEhpZ2glMjBLbmVlcyUyMGV4ZXJjaXNlfGVufDB8fDB8fHww" alt="Exercise 9" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">High Knees</h3>
+                    <p class="mt-2 text-gray-600">Boost your cardio with high knees, an effective high-intensity move.</p>
+                </div>
+                <div data-aos="fade-up" class="exercise-card bg-white rounded-lg shadow-lg p-6">
+                    <img src="https://plus.unsplash.com/premium_photo-1679635697634-dd5609151838?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TGVnJTIwUmFpc2VzJTIwZXhlcmNpc2V8ZW58MHx8MHx8fDA%3D" alt="Exercise 10" class="w-full h-48 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-800">Leg Raises</h3>
+                    <p class="mt-2 text-gray-600">Focus on your lower abs with leg raises for a stronger core.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between">
+                <p>&copy; 2024 Team Biscuit. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-400">Terms of Service</a>
+                    <a href="#" class="hover:text-gray-400">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

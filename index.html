@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFlex Wellness</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Additional custom styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .hero-section {
+            background-image: url('https://images.pexels.com/photos/1126374/pexels-photo-1126374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+        }
+        .pillars-card img {
+            transition: transform 0.3s;
+        }
+        .pillars-card img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-8" src="https://th.bing.com/th/id/OIP.KXliBHCnIwxMvPmeEmbUOAHaHa?w=169&h=180&c=7&r=0&o=5&pid=1.7" alt="FitFlex Wellness Logo">
+                        <span class="text-xl font-bold ml-2">FitFlex Wellness</span>
+                    </div>
+                    <div class="hidden md:flex md:ml-10">
+                      <a href="index.html" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                      <a href="fitness.html" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Fitness</a>
+                      <a href="nutrition.html" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Nutrition</a>
+                      <a href="mental.html" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Mental Well-being</a>
+                      <a href="#meditation" class="text-gray-800 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium">Meditation</a>
+                  </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#" class="text-gray-800 hover:text-green-500">Login</a>
+                    <a href="#" class="bg-green-500 text-white px-3 py-2 rounded-md text-sm font-medium">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section data-aos="fade-up" class="hero-section h-screen flex items-center justify-center bg-gray-900 bg-opacity-50 text-center text-white">
+        <div>
+            <h1 class="text-5xl font-bold">Transform Your Life with Holistic Wellness</h1>
+            <p class="mt-4 text-lg">Discover the balance between body, mind, and spirit.</p>
+            <a href="#" class="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-full text-lg">Join Our Wellness Journey</a>
+        </div>
+    </section>
+
+    <!-- Three Pillars of Wellness -->
+    <section data-aos="fade-down" class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Our Three Pillars of Wellness</h2>
+                <p class="mt-4 text-lg text-gray-600">A balanced approach to fitness, nutrition, and mental well-being.</p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <!-- Fitness -->
+                <div data-aos="fade-left" class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="pillars-card bg-white rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" alt="Fitness" class="w-full h-48 object-cover rounded-md">
+                        <h3 class="mt-4 text-2xl font-semibold text-gray-800">Fitness</h3>
+                        <p class="mt-2 text-gray-600">Find Your Strength with our personalized workout routines.</p>
+                        <a href="#fitness-content" class="mt-4 inline-block text-green-500 hover:text-green-700">Learn More</a>
+                    </div>
+                </div>
+                <!-- Nutrition -->
+                <div data-aos="fade-down" class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="pillars-card bg-white rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TnV0cml0aW9ufGVufDB8fDB8fHww" alt="Nutrition" class="w-full h-48 object-cover rounded-md">
+                        <h3 class="mt-4 text-2xl font-semibold text-gray-800">Nutrition</h3>
+                        <p class="mt-2 text-gray-600">Nourish Your Body with our healthy recipes and tips.</p>
+                        <a href="#nutrition-content" class="mt-4 inline-block text-green-500 hover:text-green-700">Learn More</a>
+                    </div>
+                </div>
+                <!-- Mental Well-being -->
+                <div data-aos="fade-right" class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="pillars-card bg-white rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWVudGFsJTIwd2VsbGJlaW5nfGVufDB8fDB8fHww" alt="Mental Well-being" class="w-full h-48 object-cover rounded-md">
+                        <h3 class="mt-4 text-2xl font-semibold text-gray-800">Mental Well-being</h3>
+                        <p class="mt-2 text-gray-600">Calm Your Mind with our mindfulness exercises and practices.</p>
+                        <a href="#mental-content" class="mt-4 inline-block text-green-500 hover:text-green-700">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Sections for Each Pillar -->
+
+    <!-- Fitness Section -->
+    <section data-aos="fade-down" id="fitness-content" class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="zoom-in" class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Fitness</h2>
+                <p class="mt-4 text-lg text-gray-600">Our fitness programs are designed to help you find your strength and build a body you can be proud of. From beginner to advanced levels, we have something for everyone.</p>
+            </div>
+            <div data-aos="zoom-in" class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Personalized Workout Plans</h3>
+                        <p class="mt-2 text-gray-600">Get a custom workout plan tailored to your fitness goals and current level. Whether you're looking to build muscle, lose weight, or improve your overall fitness, we have the perfect plan for you.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Group Fitness Classes</h3>
+                        <p class="mt-2 text-gray-600">Join our group classes for a fun and motivating workout experience. From yoga to HIIT, our classes are designed to challenge you and keep you engaged.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section data-aos="fade-up" id="nutrition-content" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="zoom-in" class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Nutrition</h2>
+                <p class="mt-4 text-lg text-gray-600">Nutrition is the cornerstone of a healthy lifestyle. Explore our collection of healthy recipes, meal plans, and expert tips to nourish your body and support your wellness journey.</p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Healthy Recipes</h3>
+                        <p class="mt-2 text-gray-600">Discover delicious and nutritious recipes for every meal of the day. Our recipes are designed to be easy to prepare, balanced, and full of flavor.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Expert Nutrition Tips</h3>
+                        <p class="mt-2 text-gray-600">Get expert advice on how to eat well and stay healthy. From understanding macronutrients to meal prepping, our tips will help you make informed food choices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mental Well-being Section -->
+    <section data-aos="fade-down" id="mental-content" class="py-12 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div data-aos="fade-out" class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Mental Well-being</h2>
+                <p class="mt-4 text-lg text-gray-600">Your mental health is just as important as your physical health. Explore our resources on mindfulness, stress management, and self-care to support your mental well-being.</p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Mindfulness Practices</h3>
+                        <p class="mt-2 text-gray-600">Learn simple mindfulness exercises that can help you stay present, reduce stress, and enhance your overall well-being. Our practices are easy to incorporate into your daily routine.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800">Stress Management Techniques</h3>
+                        <p class="mt-2 text-gray-600">Discover effective techniques to manage stress and maintain a sense of calm. From deep breathing exercises to progressive muscle relaxation, find the right tools for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meditation Section -->
+    <section data-aos="fade-up" id="meditation" class="py-12 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div data-aos="fade-down" class="text-center mb-12">
+              <h2 class="text-3xl font-bold text-gray-800">Meditation</h2>
+              <p class="mt-4 text-lg text-gray-600">Immerse yourself in tranquility with our guided meditation sessions. Use our built-in timer and soothing background music to create a peaceful meditation experience.</p>
+          </div>
+          <div data-aos="zoom-out" class="flex justify-center">
+              <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                  <h3 class="text-2xl font-semibold text-gray-800">Guided Meditation Timer</h3>
+                  <p class="mt-4 text-gray-600">Set the duration and start your meditation session.</p>
+                  <div class="mt-6">
+                      <input id="meditation-duration" type="number" placeholder="Minutes" class="border rounded-md p-2 text-center w-24">
+                      <button id="start-meditation" class="ml-4 bg-green-500 text-white px-4 py-2 rounded-md">Start</button>
+                      <button id="stop-meditation" class="ml-4 bg-red-500 text-white px-4 py-2 rounded-md hidden">Stop</button>
+                  </div>
+                  <div id="meditation-timer" class="mt-8 text-3xl font-bold text-gray-800"></div>
+                  <audio id="meditation-music" loop>
+                      <source src="meditation-music.mp3" type="audio/mpeg">
+                  </audio>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between">
+                <div>
+                    <h4 class="text-lg font-semibold">FitFlex Wellness</h4>
+                    <p class="mt-2 text-sm">Empowering you to live a balanced, healthy, and fulfilling life.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-100">Facebook</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-100">Instagram</a>
+                    <a href="#" class="text-gray-400 hover:text-gray-100">Twitter</a>
+                </div>
+            </div>
+            <div class="mt-4 text-sm text-center">
+                &copy; 2024 Team Biscuit. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Meditation Timer Script -->
+    <script>
+      let countdown;
+      document.getElementById('start-meditation').addEventListener('click', function() {
+          let duration = parseInt(document.getElementById('meditation-duration').value) * 60; // Convert minutes to seconds
+          let timerDisplay = document.getElementById('meditation-timer');
+          let meditationMusic = document.getElementById('meditation-music');
+          let stopButton = document.getElementById('stop-meditation');
+          let startButton = document.getElementById('start-meditation');
+  
+          if (isNaN(duration) || duration <= 0) {
+              alert('Please enter a valid number of minutes.');
+              return;
+          }
+  
+          meditationMusic.play();
+          stopButton.classList.remove('hidden');
+          startButton.classList.add('hidden');
+  
+          countdown = setInterval(function() {
+              if (duration <= 0) {
+                  clearInterval(countdown);
+                  timerDisplay.textContent = 'Session Complete';
+                  meditationMusic.pause();
+                  stopButton.classList.add('hidden');
+                  startButton.classList.remove('hidden');
+              } else {
+                  duration--;
+                  let minutes = Math.floor(duration / 60);
+                  let seconds = duration % 60;
+                  timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+              }
+          }, 1000);
+      });
+  
+      document.getElementById('stop-meditation').addEventListener('click', function() {
+          clearInterval(countdown);
+          let timerDisplay = document.getElementById('meditation-timer');
+          let meditationMusic = document.getElementById('meditation-music');
+          meditationMusic.pause();
+          meditationMusic.currentTime = 0; // Reset the music to start
+          timerDisplay.textContent = 'Meditation Stopped';
+          document.getElementById('stop-meditation').classList.add('hidden');
+          document.getElementById('start-meditation').classList.remove('hidden');
+      });
+  </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+  
+
+</body>
+</html>
